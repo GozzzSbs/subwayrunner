@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Rush 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎄 CHRISTMAS RUSH</h1>
+        <div id="timer">00:00.00</div>
+        <div id="playerName">Invité</div>
+    </header>
+
+    <main>
+        <section id="game-container">
+            <div id="game"></div>
+
+            <div id="game-message">
+                Bienvenue dans Christmas Rush !
+            </div>
+
+            <button id="startButton">JOUER</button>
+        </section>
+
+        <aside>
+            <section id="account">
+                <h2>👤 Mon compte</h2>
+                <input id="pseudo" placeholder="Pseudo">
+                <input id="password" type="password" placeholder="Mot de passe">
+
+                <button id="registerButton">Créer un compte</button>
+                <button id="loginButton">Connexion</button>
+                <button id="logoutButton" hidden>Déconnexion</button>
+            </section>
+
+            <section>
+                <h2>🏆 Classement NO COIN</h2>
+                <ol id="leaderboard"></ol>
+            </section>
+        </aside>
+    </main>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
